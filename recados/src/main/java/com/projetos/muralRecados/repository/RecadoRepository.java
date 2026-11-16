@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 
-public class RecadoRepository extends JpaRepository<Recado, Long> {
+public interface RecadoRepository extends JpaRepository<Recado, Long> {
 
     boolean existsById(Long id);
 
@@ -14,6 +14,7 @@ public class RecadoRepository extends JpaRepository<Recado, Long> {
 
     List<Recado> findById(Recado id);
 
-    }
 
 }
+
+
